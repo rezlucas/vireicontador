@@ -99,8 +99,20 @@ ul, ol { list-style: none; }
 }
 .lp-hero__title em { font-style: normal; color: var(--color-primary); }
 .lp-hero__desc { font-size: var(--font-size-lg); line-height: var(--line-height-relaxed); color: rgba(255,255,255,.8); max-width: 52ch; }
-.lp-hero__media { width: 100%; max-width: 360px; margin-top: var(--space-sm); }
+.lp-hero__media { position: relative; width: 100%; max-width: 360px; margin-top: var(--space-sm); }
 .lp-hero__media img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: var(--radius-2xl); border: 1px solid rgba(255,255,255,.12); box-shadow: 0 24px 64px -20px rgba(0,0,0,.5); }
+.lp-hero__badge {
+  position: absolute; bottom: -14px; left: 14px; z-index: 1;
+  display: inline-flex; align-items: center; gap: 6px;
+  background-color: #fff; color: var(--color-text-strong);
+  padding: 8px 14px; border-radius: 9999px; font-size: var(--font-size-xs); font-weight: 700;
+  box-shadow: var(--shadow-md);
+}
+.lp-hero__badge svg { width: 16px; height: 16px; color: var(--color-primary); flex-shrink: 0; }
+.lp-hero__trust { display: flex; flex-wrap: wrap; gap: var(--space-lg); margin-top: var(--space-xs); justify-content: center; }
+.lp-hero__trust-item { display: flex; align-items: center; gap: var(--space-sm); font-size: var(--font-size-sm); font-weight: 600; color: rgba(255,255,255,.85); }
+.lp-hero__trust-item svg { width: 18px; height: 18px; color: var(--color-primary); flex-shrink: 0; }
+@media (min-width: 860px) { .lp-hero__trust { justify-content: flex-start; } }
 
 /* ───────── SECTION ───────── */
 .lp-section { padding-block: var(--space-3xl); }
@@ -150,6 +162,22 @@ ul, ol { list-style: none; }
 .lp-diff-list li { font-size: var(--font-size-base); line-height: var(--line-height-relaxed); color: var(--color-text-body); }
 .lp-diff-list li strong { color: var(--color-text-strong); }
 
+/* ───────── DIFERENCIAL EM CARDS ───────── */
+.lp-diff-grid { display: grid; grid-template-columns: 1fr; gap: var(--space-lg); margin-block-start: var(--space-lg); }
+.lp-diff-card { display: flex; flex-direction: column; gap: var(--space-md); padding: var(--space-xl); background-color: var(--color-background); border: 1px solid var(--color-border); border-radius: var(--radius-xl); }
+.lp-diff-card__icon { display: inline-grid; place-items: center; width: 48px; height: 48px; border-radius: var(--radius-full); background-color: var(--color-secondary); color: #fff; }
+.lp-diff-card__icon svg { width: 22px; height: 22px; }
+.lp-diff-card__title { font-size: var(--font-size-base); font-weight: 700; color: var(--color-text-strong); }
+.lp-diff-card__desc { font-size: var(--font-size-sm); line-height: var(--line-height-relaxed); color: var(--color-text-muted); }
+@media (min-width: 860px) { .lp-diff-grid { grid-template-columns: repeat(3, 1fr); } }
+
+/* ───────── SOBRE (trust block centrado) ───────── */
+.lp-section--center { text-align: center; }
+.lp-section--center .lp-section__title,
+.lp-section--center .lp-section__desc,
+.lp-section--center .lp-section__eyebrow { margin-inline: auto; }
+.lp-section--center .lp-section__desc { max-width: 60ch; font-size: var(--font-size-lg); color: var(--color-text-body); }
+
 /* ───────── FAQ ───────── */
 .lp-faq { background-color: var(--color-background); border-radius: var(--radius-xl); border: 1px solid var(--color-border); padding-inline: var(--space-lg); margin-block-start: var(--space-lg); }
 .lp-faq__item { border-bottom: 1px solid var(--color-border); }
@@ -173,6 +201,7 @@ details[open] > .lp-faq__trigger .lp-faq__icon .v { transform: rotate(90deg) sca
 .lp-client-card__name { font-size: var(--font-size-base); font-weight: 700; color: var(--color-text-inverse); }
 .lp-client-card__role { font-size: var(--font-size-sm); color: rgba(255,255,255,.55); }
 @media (min-width: 640px) { .lp-clients { grid-template-columns: repeat(2,1fr); } }
+@media (min-width: 860px) { .lp-clients { grid-template-columns: repeat(3,1fr); } }
 
 /* ───────── FORM / OFERTA ───────── */
 .lp-form { background-color: var(--color-background); border-radius: var(--radius-2xl); border: 1px solid var(--color-border); padding: var(--space-2xl); margin-block-start: var(--space-lg); text-align: center; }
@@ -182,6 +211,11 @@ details[open] > .lp-faq__trigger .lp-faq__icon .v { transform: rotate(90deg) sca
 /* ───────── FOOTER ───────── */
 .lp-footer { padding-block: var(--space-2xl); text-align: center; border-top: 1px solid var(--color-border); }
 .lp-footer img { height: 24px; width: auto; margin-inline: auto; margin-block-end: var(--space-md); }
+.lp-footer__desc { font-size: var(--font-size-sm); line-height: var(--line-height-relaxed); color: var(--color-text-muted); max-width: 46ch; margin-inline: auto; margin-block-end: var(--space-md); }
+.lp-footer__social { display: flex; gap: 14px; justify-content: center; margin-block-end: var(--space-md); }
+.lp-footer__social a { color: var(--color-text-muted); transition: color .15s ease; }
+.lp-footer__social a:hover { color: var(--color-secondary); }
+.lp-footer__social svg { width: 20px; height: 20px; }
 .lp-footer p { font-size: var(--font-size-xs); line-height: var(--line-height-relaxed); color: var(--color-text-muted); max-width: 60ch; margin-inline: auto; }
 .lp-footer a { color: var(--color-text-muted); text-decoration: underline; }
 
