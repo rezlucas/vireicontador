@@ -222,28 +222,23 @@
     .hero__desc { font-size: var(--font-size-lg); line-height: var(--line-height-relaxed); color: rgba(255,255,255,.78); max-width: 56ch; }
     .hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-md); justify-content: center; margin-block-start: var(--space-sm); }
 
+    @keyframes hero-orbit-spin { to { transform: rotate(360deg); } }
+
     .hero__orbits { position: relative; width: 100%; max-width: 380px; aspect-ratio: 1 / 1; margin-inline: auto; }
-    .hero__ring { position: absolute; border-radius: 50%; pointer-events: none; }
-    .hero__ring--1 { inset: -9%; border: 1px solid rgba(0,188,174,.4); }
-    .hero__ring--2 { inset: -20%; border: 1px solid rgba(255,255,255,.16); }
-    .hero__ring--3 { inset: 9%; border: 1px solid rgba(227,251,249,.3); }
+    .hero__ring { position: absolute; border-radius: 50%; pointer-events: none; border: 1px solid transparent; }
+    .hero__ring--1 { inset: -9%; border-top-color: rgba(0,188,174,.55); border-right-color: rgba(0,188,174,.55); animation: hero-orbit-spin 16s linear infinite; }
+    .hero__ring--2 { inset: -20%; border-top-color: rgba(255,255,255,.28); border-left-color: rgba(255,255,255,.28); animation: hero-orbit-spin 24s linear infinite reverse; }
+    .hero__ring--3 { inset: 9%; border-bottom-color: rgba(227,251,249,.45); border-right-color: rgba(227,251,249,.45); animation: hero-orbit-spin 12s linear infinite; }
     .hero__dot { position: absolute; width: 9px; height: 9px; border-radius: 50%; pointer-events: none; }
     .hero__dot--1 { top: -2%; right: 18%; background: var(--color-primary); }
     .hero__dot--2 { bottom: 4%; left: -6%; background: #fff; opacity: .7; }
     .hero__dot--3 { top: 38%; right: -8%; width: 6px; height: 6px; background: var(--color-primary-light); }
+    @media (prefers-reduced-motion: reduce) { .hero__ring { animation: none; } }
 
     .hero__media { position: relative; width: 100%; height: 100%; border-radius: 50%; overflow: hidden; border: 1px solid rgba(255,255,255,.16); box-shadow: 0 24px 64px -20px rgba(0,0,0,.55); z-index: 1; }
     .hero__media img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
     .hero__accent-circle { position: absolute; top: 4%; left: -8%; width: 26%; aspect-ratio: 1/1; border-radius: 50%; background: var(--color-primary-light); z-index: 2; box-shadow: var(--shadow-md); }
-    .hero__badge {
-      position: absolute; bottom: -6%; left: 6%; z-index: 2;
-      display: inline-flex; align-items: center; gap: 6px;
-      background-color: #fff; color: var(--color-text-strong);
-      padding: 8px 14px; border-radius: 9999px; font-size: var(--font-size-xs); font-weight: var(--font-weight-bold);
-      box-shadow: var(--shadow-md); white-space: nowrap;
-    }
-    .hero__badge svg { width: 16px; height: 16px; color: var(--color-primary); flex-shrink: 0; }
 
     .button--split { padding-right: 6px; gap: var(--space-md); }
     .button--split .button__circle {
@@ -660,7 +655,6 @@
       <div class="hero__media">
         <img src="assets/vireicontador/people-hero.webp" alt="Time da VC Contabilidade Digital" width="500" height="500" loading="eager">
       </div>
-      <span class="hero__badge"><svg aria-hidden="true"><use href="#icon-check"/></svg>Contabilidade que entende você</span>
     </div>
   </div>
 </section>
