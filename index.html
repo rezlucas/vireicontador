@@ -213,18 +213,18 @@
       font-weight: var(--font-weight-semibold); letter-spacing: var(--letter-spacing-wide); text-transform: uppercase;
     }
 
-    .hero__title { display: flex; flex-direction: column; gap: 2px; }
+    .hero__title { display: flex; flex-direction: column; gap: 4px; max-width: 34ch; }
     .hero__title-bold {
       font-family: var(--font-heading);
       font-size: clamp(var(--font-size-3xl), 6vw, var(--font-size-6xl));
       font-weight: var(--font-weight-bold); line-height: var(--line-height-tight);
       letter-spacing: var(--letter-spacing-tight);
-      color: var(--color-text-inverse);
+      color: var(--color-text-inverse); text-wrap: balance;
     }
     .hero__title-script {
       font-family: 'Playfair Display', serif; font-style: italic; font-weight: 500;
       font-size: clamp(var(--font-size-2xl), 5vw, var(--font-size-5xl));
-      line-height: 1.15; color: var(--color-primary);
+      line-height: 1.2; color: var(--color-primary); text-wrap: balance;
     }
 
     .hero__desc { font-size: var(--font-size-lg); line-height: var(--line-height-relaxed); color: rgba(255,255,255,.78); max-width: 56ch; }
@@ -241,8 +241,7 @@
     .hero__dot--3 { top: 38%; right: -8%; width: 6px; height: 6px; background: var(--color-primary-light); }
 
     .hero__media { position: relative; width: 100%; height: 100%; border-radius: 50%; overflow: hidden; border: 1px solid rgba(255,255,255,.16); box-shadow: 0 24px 64px -20px rgba(0,0,0,.55); z-index: 1; }
-    .hero__media img { display: block; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.05) brightness(1.08); }
-    .hero__media::after { content: ''; position: absolute; inset: 0; background: var(--color-primary); mix-blend-mode: color; opacity: .92; }
+    .hero__media img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
     .hero__accent-circle { position: absolute; top: 4%; left: -8%; width: 26%; aspect-ratio: 1/1; border-radius: 50%; background: var(--color-primary-light); z-index: 2; box-shadow: var(--shadow-md); }
     .hero__badge {
