@@ -87,14 +87,6 @@ ul, ol { list-style: none; }
 .lp-hero::before { content:''; position:absolute; width:340px; height:340px; top:-140px; right:-100px; border-radius:50%; background:var(--color-primary); filter:blur(110px); opacity:.32; }
 .lp-hero__inner { position: relative; display: flex; flex-direction: column; align-items: center; gap: var(--space-xl); text-align: center; }
 
-.lp-hero__eyebrow-row { position: relative; display: inline-flex; align-items: center; }
-.lp-hero__eyebrow-circle { width: 60px; height: 60px; border-radius: 50%; background: rgba(0,188,174,.16); border: 1px solid rgba(0,188,174,.32); flex-shrink: 0; margin-right: -26px; }
-.lp-hero__eyebrow {
-  position: relative; z-index: 1; padding-left: var(--space-md);
-  color: var(--color-primary); font-size: var(--font-size-xs); font-weight: 700;
-  letter-spacing: var(--letter-spacing-wide); text-transform: uppercase;
-}
-
 .lp-hero__title { display: flex; flex-direction: column; gap: 4px; max-width: 34ch; }
 .lp-hero__title-bold {
   font-family: var(--font-heading); font-size: clamp(var(--font-size-3xl), 6vw, var(--font-size-5xl));
