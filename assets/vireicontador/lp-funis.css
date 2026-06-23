@@ -128,8 +128,7 @@ ul, ol { list-style: none; }
 .btn--split .btn__circle svg { width: 18px; height: 18px; }
 
 /* ───────── CTA de seção ───────── */
-.lp-section__cta { margin-top: var(--space-xl); }
-.lp-section--center .lp-section__cta { display: flex; justify-content: center; }
+.lp-section__cta { margin-top: var(--space-xl); display: flex; justify-content: center; }
 
 /* ───────── SECTION ───────── */
 .lp-section { padding-block: var(--space-3xl); }
