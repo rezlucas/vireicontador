@@ -8,7 +8,7 @@
   <link rel="icon" type="image/webp" href="/assets/vireicontador/favicon_vireicontador.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/vireicontador/lp-funis.css">
 </head>
 <body>
@@ -36,18 +36,36 @@
 <section class="lp-hero">
   <div class="container lp-hero__inner">
     <div class="lp-hero__content">
-      <span class="lp-hero__eyebrow">Migração 100% gratuita</span>
-      <h1 class="lp-hero__title">Troque de contador sem dor de cabeça, e sem pagar <em>multa</em> por isso</h1>
+      <div class="lp-hero__eyebrow-row">
+        <span class="lp-hero__eyebrow-circle" aria-hidden="true"></span>
+        <span class="lp-hero__eyebrow">Migração 100% gratuita</span>
+      </div>
+      <h1 class="lp-hero__title">
+        <span class="lp-hero__title-bold">Troque de contador</span>
+        <span class="lp-hero__title-script">sem dor de cabeça, sem multa</span>
+      </h1>
       <p class="lp-hero__desc">Migração 100% gratuita, sem precisar fechar o ano fiscal. A gente cuida de toda a transição enquanto você cuida do seu negócio.</p>
-      <a href="#formulario" class="btn">Quero trocar de contador<svg aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+      <a href="#formulario" class="btn btn--split">
+        <span>Quero trocar de contador</span>
+        <span class="btn__circle" aria-hidden="true"><svg><use href="#icon-arrow"/></svg></span>
+      </a>
       <div class="lp-hero__trust">
         <span class="lp-hero__trust-item"><svg aria-hidden="true"><use href="#icon-check"/></svg>Migração sem burocracia</span>
         <span class="lp-hero__trust-item"><svg aria-hidden="true"><use href="#icon-clock"/></svg>Resposta em poucas horas</span>
         <span class="lp-hero__trust-item"><svg aria-hidden="true"><use href="#icon-heart"/></svg>Atendimento humano</span>
       </div>
     </div>
-    <div class="lp-hero__media">
-      <img src="/assets/vireicontador/atendimento-humanizado-vc.webp" alt="Time de atendimento da VC Contabilidade Digital" width="380" height="285" loading="eager">
+    <div class="lp-hero__orbits">
+      <span class="lp-hero__ring lp-hero__ring--1" aria-hidden="true"></span>
+      <span class="lp-hero__ring lp-hero__ring--2" aria-hidden="true"></span>
+      <span class="lp-hero__ring lp-hero__ring--3" aria-hidden="true"></span>
+      <span class="lp-hero__dot lp-hero__dot--1" aria-hidden="true"></span>
+      <span class="lp-hero__dot lp-hero__dot--2" aria-hidden="true"></span>
+      <span class="lp-hero__dot lp-hero__dot--3" aria-hidden="true"></span>
+      <span class="lp-hero__accent-circle" aria-hidden="true"></span>
+      <div class="lp-hero__media">
+        <img src="/assets/vireicontador/atendimento-humanizado-vc.webp" alt="Time de atendimento da VC Contabilidade Digital" width="380" height="380" loading="eager">
+      </div>
       <span class="lp-hero__badge"><svg aria-hidden="true"><use href="#icon-check"/></svg>Sem dor de cabeça</span>
     </div>
   </div>

@@ -8,7 +8,7 @@
   <link rel="icon" type="image/webp" href="/assets/vireicontador/favicon_vireicontador.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/vireicontador/lp-funis.css">
 </head>
 <body>
@@ -35,18 +35,36 @@
 <section class="lp-hero">
   <div class="container lp-hero__inner">
     <div class="lp-hero__content">
-      <span class="lp-hero__eyebrow">Abertura em até 48h</span>
-      <h1 class="lp-hero__title">Abra sua empresa no <em>Espírito Santo</em> com quem entende o seu negócio</h1>
+      <div class="lp-hero__eyebrow-row">
+        <span class="lp-hero__eyebrow-circle" aria-hidden="true"></span>
+        <span class="lp-hero__eyebrow">Abertura em até 48h</span>
+      </div>
+      <h1 class="lp-hero__title">
+        <span class="lp-hero__title-bold">Abra sua empresa</span>
+        <span class="lp-hero__title-script">no Espírito Santo, em até 48h</span>
+      </h1>
       <p class="lp-hero__desc">Abertura de CNPJ em até 48h, sem burocracia e sem pagar honorários, com um contador de verdade do seu lado, não um robô. A gente cuida de tudo enquanto você começa a faturar.</p>
-      <a href="#formulario" class="btn">Quero abrir minha empresa<svg aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+      <a href="#formulario" class="btn btn--split">
+        <span>Quero abrir minha empresa</span>
+        <span class="btn__circle" aria-hidden="true"><svg><use href="#icon-arrow"/></svg></span>
+      </a>
       <div class="lp-hero__trust">
         <span class="lp-hero__trust-item"><svg aria-hidden="true"><use href="#icon-clock"/></svg>CNPJ em até 48h</span>
         <span class="lp-hero__trust-item"><svg aria-hidden="true"><use href="#icon-check"/></svg>Sem honorários na abertura</span>
         <span class="lp-hero__trust-item"><svg aria-hidden="true"><use href="#icon-compass"/></svg>Especialistas no ES</span>
       </div>
     </div>
-    <div class="lp-hero__media">
-      <img src="/assets/vireicontador/abertura-empresa-vc.webp" alt="Processo de abertura de empresa 100% online" width="380" height="285" loading="eager">
+    <div class="lp-hero__orbits">
+      <span class="lp-hero__ring lp-hero__ring--1" aria-hidden="true"></span>
+      <span class="lp-hero__ring lp-hero__ring--2" aria-hidden="true"></span>
+      <span class="lp-hero__ring lp-hero__ring--3" aria-hidden="true"></span>
+      <span class="lp-hero__dot lp-hero__dot--1" aria-hidden="true"></span>
+      <span class="lp-hero__dot lp-hero__dot--2" aria-hidden="true"></span>
+      <span class="lp-hero__dot lp-hero__dot--3" aria-hidden="true"></span>
+      <span class="lp-hero__accent-circle" aria-hidden="true"></span>
+      <div class="lp-hero__media">
+        <img src="/assets/vireicontador/abertura-empresa-vc.webp" alt="Processo de abertura de empresa 100% online" width="380" height="380" loading="eager">
+      </div>
       <span class="lp-hero__badge"><svg aria-hidden="true"><use href="#icon-check"/></svg>Processo 100% online</span>
     </div>
   </div>
