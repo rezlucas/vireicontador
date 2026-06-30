@@ -494,6 +494,10 @@
     .about__inner { max-width: 680px; margin-inline: auto; text-align: center; display: flex; flex-direction: column; align-items: center; gap: var(--space-lg); }
     .about__title { font-family: var(--font-heading); font-size: clamp(var(--font-size-2xl), 4vw, var(--font-size-4xl)); font-weight: var(--font-weight-bold); color: var(--color-text-inverse); line-height: var(--line-height-tight); }
     .about__desc { font-size: var(--font-size-base); line-height: var(--line-height-relaxed); color: rgba(255,255,255,.78); }
+    .about__form { width: 100%; max-width: 480px; background-color: #fff; border-radius: var(--radius-2xl); padding: var(--space-2xl); margin-block-start: var(--space-sm); text-align: left; }
+    .about__form-embed iframe { width: 100% !important; }
+    .about__lgpd { font-size: var(--font-size-xs); color: var(--color-text-muted); margin-block-start: var(--space-md); text-align: center; }
+    .about__lgpd a { text-decoration: underline; }
 
     /* ════════════════════════════════════════
        10. FOOTER
@@ -1121,12 +1125,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       Nosso propósito é oferecer ao pequeno e médio empresário uma contabilidade online que siga os princípios
       de Satisfação do Cliente, Segurança, Modernidade e Baixo Custo.
     </p>
-    <div class="hero__actions" id="contato">
-      <a href="#" class="button button--filled button--lg">
-        Falar com a VC agora
-        <svg class="button__icon" aria-hidden="true" focusable="false"><use href="#icon-whatsapp"/></svg>
-      </a>
+    <div class="about__form" id="contato">
+      <div class="about__form-embed">
+        <script src="https://js.hsforms.net/forms/embed/51408650.js" defer></script>
+        <div class="hs-form-frame" data-region="na1" data-form-id="0152e24d-8e69-463d-ab88-47a989d77035" data-portal-id="51408650"></div>
+      </div>
     </div>
+    <p class="about__lgpd">Ao enviar, você concorda com nossa <a href="/politica-de-privacidade">Política de Privacidade</a>.</p>
   </div>
 </section>
 
