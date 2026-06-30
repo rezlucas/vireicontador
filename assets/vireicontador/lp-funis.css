@@ -235,7 +235,9 @@ details[open] > .lp-faq__trigger .lp-faq__icon .v { transform: rotate(90deg) sca
 
 /* ───────── FORM / OFERTA ───────── */
 .lp-form { background-color: var(--color-background); border-radius: var(--radius-2xl); border: 1px solid var(--color-border); padding: var(--space-2xl); margin-block-start: var(--space-lg); text-align: center; }
-.lp-form__embed { margin-block-start: var(--space-xl); padding: var(--space-2xl); border: 2px dashed var(--color-border-strong); border-radius: var(--radius-xl); color: var(--color-text-muted); font-size: var(--font-size-sm); }
+.lp-form__embed { margin-block-start: var(--space-xl); max-width: 480px; margin-inline: auto; text-align: left; }
+.lp-form__embed .hs-form-frame { width: 100%; }
+.lp-form__embed iframe { width: 100% !important; }
 .lp-form__lgpd { margin-block-start: var(--space-md); font-size: var(--font-size-xs); color: var(--color-text-muted); }
 
 /* ───────── FOOTER ───────── */
