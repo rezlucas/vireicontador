@@ -271,6 +271,19 @@ details[open] > .lp-faq__trigger .lp-faq__icon .v { transform: rotate(90deg) sca
   background-repeat: no-repeat !important; background-position: right 12px center !important; background-size: 16px !important;
   padding-right: 36px !important;
 }
+/* Campo de telefone (seletor de país + número) do formulário HubSpot */
+.lp-form__embed .hsfc-PhoneInput { align-items: stretch !important; }
+.lp-form__embed .hsfc-PhoneInput__FlagAndCaret {
+  align-self: stretch !important; height: auto !important; box-sizing: border-box !important;
+  padding: 12px var(--space-sm) !important; background: var(--color-background-alt) !important;
+  border: 1.5px solid var(--color-border) !important; border-right: none !important;
+  border-radius: var(--radius-lg) 0 0 var(--radius-lg) !important;
+  transition: border-color .15s ease, background-color .15s ease !important;
+}
+.lp-form__embed .hsfc-PhoneInput__FlagAndCaret:hover { border-color: var(--color-border-strong) !important; background: var(--color-background) !important; }
+.lp-form__embed .hsfc-PhoneInput > input.hsfc-TextInput[type="tel"] {
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0 !important; border-left: none !important;
+}
 .lp-form__embed input[type="radio"], .lp-form__embed input[type="checkbox"] { margin-right: var(--space-sm) !important; cursor: pointer !important; accent-color: var(--color-primary) !important; width: 18px !important; height: 18px !important; }
 .lp-form__embed input[type="radio"] + label, .lp-form__embed input[type="checkbox"] + label { font-weight: 400 !important; color: var(--color-text-body) !important; cursor: pointer !important; display: inline !important; margin-left: 6px !important; }
 .lp-form__embed fieldset { border: none !important; padding: 0 !important; margin: 0 !important; }
