@@ -234,7 +234,7 @@ details[open] > .lp-faq__trigger .lp-faq__icon .v { transform: rotate(90deg) sca
 @media (min-width: 860px) { .lp-clients { grid-template-columns: repeat(3,1fr); } }
 
 /* ───────── FORM / OFERTA ───────── */
-.lp-form { background-color: var(--color-background); border-radius: var(--radius-2xl); border: 1px solid var(--color-border); padding: var(--space-2xl); margin-block-start: var(--space-lg); text-align: center; }
+.lp-form { background-color: var(--color-background); border-radius: var(--radius-2xl); border: 1px solid var(--color-border); margin-block-start: var(--space-lg); text-align: center; }
 .lp-form__embed { margin-block-start: var(--space-xl); max-width: 480px; margin-inline: auto; text-align: left; }
 .lp-form__lgpd { margin-block-start: var(--space-md); font-size: var(--font-size-xs); color: var(--color-text-muted); }
 
